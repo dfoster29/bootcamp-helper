@@ -91,21 +91,25 @@
           </a>
 
           <a href="#menu1" class="list-group-item d-inline-block collapsed" data-toggle="collapse" aria-expanded="false">
+            <i class="fas fa-video"></i>
             <span class="d-none d-md-inline">Videos</span>
             <i class="ml-2 fas fa-caret-down"></i>
           </a>
           <div class="collapse" id="menu1" data-parent="#sidebar">
-            <a href="#menu1sub1" class="list-group-item" data-toggle="collapse" aria-expanded="false">01-HTML-CSS-GIT</a>
-            <a href="#menu1sub2" class="list-group-item" data-toggle="collapse" aria-expanded="false">02-CSS-Bootstrap</a>
-            <a href="#menu1sub3" class="list-group-item" data-toggle="collapse" aria-expanded="false">03-Javascript</a>
-            <a href="#menu1sub4" class="list-group-item" data-toggle="collapse" aria-expanded="false">04-JQuery</a>
-            <a href="#menu1sub5" class="list-group-item" data-toggle="collapse" aria-expanded="false">05-Timers</a>
-            <a href="#menu1sub6" class="list-group-item" data-toggle="collapse" aria-expanded="false">06-Ajax</a>
-            <a href="#menu1sub7" class="list-group-item" data-toggle="collapse" aria-expanded="false">07-Firebase</a>
-            <a href="#menu1sub8" class="list-group-item" data-toggle="collapse" aria-expanded="false">10-NodeJS</a>
-            <a href="#menu1sub9" class="list-group-item" data-toggle="collapse" aria-expanded="false">01-HTML-CSS-GIT</a>
-            <a href="#menu1sub10" class="list-group-item" data-toggle="collapse" aria-expanded="false">02-CSS-Bootstrap</a>
-            <div class="collapse" id="menu1sub2" data-parent="#menu1">
+            <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">01-HTML-CSS-GIT</a>
+            <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">02-CSS-Bootstrap</a>
+            <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">03-Javascript</a>
+            <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">04-JQuery</a>
+            <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">05-Timers</a>
+            <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">06-Ajax</a>
+            <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">07-Firebase</a>
+            <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">10-NodeJS</a>
+            <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">11-JS-Constructors</a>
+            <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">12-MYSQL</a>
+            <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">13-Express</a>
+            <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">14-Handlebars</a>
+            <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">15-Sequelize</a>
+            <!-- <div class="collapse" id="menu1sub2" data-parent="#menu1">
               <a href="#" class="list-group-item" data-parent="#menu1sub1">Subitem 1 a</a>
               <a href="#" class="list-group-item" data-parent="#menu1sub1">Subitem 2 b</a>
               <a href="#menu1sub1sub1" class="list-group-item" data-toggle="collapse" aria-expanded="false">Subitem 3 c </a>
@@ -120,12 +124,20 @@
                 <a href="#" class="list-group-item" data-parent="#menu1sub1sub2">Subitem 5 e.2</a>
               </div>
             </div>
-            <a href="#" class="list-group-item">Subitem 3</a>
+            <a href="#" class="list-group-item">Subitem 3</a> -->
           </div>
-          <a href="#" class="list-group-item d-inline-block collapsed">
-            <i class="fa fa-film"></i>
-            <span class="d-none d-md-inline">Item 2</span>
+          <a href="#menu2" class="list-group-item d-inline-block collapsed" data-toggle="collapse" aria-expanded="false">
+              <i class="fas fa-sticky-note"></i>
+            <span class="d-none d-md-inline">Cheatsheets</span>
+            <i class="ml-2 fas fa-caret-down"></i>
           </a>
+          <div class="collapse" id="menu2" data-parent="#sidebar">
+            <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">01-HTML-CSS-GIT</a>
+            <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">02-CSS-Bootstrap</a>
+            <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">03-Javascript</a>
+          </div>
+
+
 
           <!-- social menu section ============================= -->
           <a href="#menu3" class="list-group-item d-inline-block collapsed" data-toggle="collapse" aria-expanded="false">
@@ -155,16 +167,33 @@
       <!-- sidebar toggle button ========================== -->
       <!-- <main class="col-md-10 float-left col px-5 pl-md-2 pt-2 main"> -->
       <div class="w-100">
-        <a href="#" data-target="#sidebar" data-toggle="collapse">
-          <i class="m-2 fas fa-bars"></i>
-        </a>
+
+        <div class="row">
+          <div class="col-md-4 pl-3">
+            <a href="#" data-target="#sidebar" data-toggle="collapse">
+              <i class="m-2 fas fa-bars"></i>
+            </a>
+          </div>
+
+          <div class="col-md-4 p-3">
+            <div class="text-center p-2" id="section-title">
+              <h1>01-HTML-CSS-GIT</h1>
+            </div>
+          </div>
+          <div class="col-md-4">
+
+          </div>
+        </div>
+
 
         <div class="row p-2 justify-content-center">
           <div class="col-md-4">
             <div class="card w-100 mb-4">
               <img class="card-img-top" src="./assets/img/01-1.png" alt="Card image cap">
               <div class="card-body text-center">
-                <a href="https://www.youtube.com/watch?v=ieb6Svbc10E" target="_blank"><h3>HTML Layout</h3></a>
+                <a href="https://www.youtube.com/watch?v=ieb6Svbc10E" target="_blank">
+                  <h3>HTML Layout</h3>
+                </a>
               </div>
             </div>
           </div>
@@ -172,7 +201,9 @@
             <div class="card w-100 mb-4">
               <img class="card-img-top" src="./assets/img/01-2.png" alt="Card image cap">
               <div class="card-body text-center">
-                <a href="https://www.youtube.com/watch?v=kMBinXTCrXI" target="_blank"><h3>Basic CSS Layout</h3></a>
+                <a href="https://www.youtube.com/watch?v=kMBinXTCrXI" target="_blank">
+                  <h3>Basic CSS Layout</h3>
+                </a>
               </div>
             </div>
           </div>
@@ -180,28 +211,34 @@
             <div class="card w-100 mb-4">
               <img class="card-img-top" src="./assets/img/01-3.png" alt="Card image cap">
               <div class="card-body text-center">
-                <a href="https://www.youtube.com/watch?v=0lpxKw6E90Y" target="_blank"><h3>CSS Floats</h3></a>
+                <a href="https://www.youtube.com/watch?v=0lpxKw6E90Y" target="_blank">
+                  <h3>CSS Floats</h3>
+                </a>
               </div>
             </div>
           </div>
 
           <div class="col-md-4">
-              <div class="card w-100">
-                <img class="card-img-top" src="./assets/img/01-4.png" alt="Card image cap">
-                <div class="card-body text-center">
-                  <a href="https://www.youtube.com/watch?v=sHfJn0jqBro" target="_blank"><h3>CSS Positioning Property</h3></a>
-                </div>
+            <div class="card w-100">
+              <img class="card-img-top" src="./assets/img/01-4.png" alt="Card image cap">
+              <div class="card-body text-center">
+                <a href="https://www.youtube.com/watch?v=sHfJn0jqBro" target="_blank">
+                  <h3>CSS Positioning Property</h3>
+                </a>
               </div>
             </div>
+          </div>
 
-            <div class="col-md-4">
-                <div class="card w-100">
-                  <img class="card-img-top" src="./assets/img/01-5.png" alt="Card image cap">
-                  <div class="card-body text-center">
-                    <a href="https://www.youtube.com/watch?v=yWXgnQaWSW0" target="_blank"><h3>CSS Positioning Layouts</h3></a>
-                  </div>
-                </div>
+          <div class="col-md-4">
+            <div class="card w-100">
+              <img class="card-img-top" src="./assets/img/01-5.png" alt="Card image cap">
+              <div class="card-body text-center">
+                <a href="https://www.youtube.com/watch?v=yWXgnQaWSW0" target="_blank">
+                  <h3>CSS Positioning Layouts</h3>
+                </a>
               </div>
+            </div>
+          </div>
 
         </div>
       </div>
