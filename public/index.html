@@ -26,51 +26,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://bootcampspot-v2.com/" target="_blank">BootcampSpot</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            Podcasts
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="https://open.spotify.com/show/4kYCRYJ3yK5DQbP5tbfZby?si=0MdbRCujS4CY_CnxwR1a1A" target="_blank">Syntax</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            Social
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="https://www.facebook.com" target="_blank">Facebook</a>
-            <a class="dropdown-item" href="https://www.twitter.com" target="_blank">Twitter</a>
-            <a class="dropdown-item" href="https://www.instagram.com" target="_blank">Instagram</a>
-          </div>
-        </li>
-      </ul> -->
+
       <form class="ml-auto form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="username" placeholder="username" aria-label="username">
         <input class="form-control mr-sm-2" type="password" placeholder="password" aria-label="password">
@@ -95,9 +51,9 @@
             <span class="d-none d-md-inline">Videos</span>
             <i class="ml-2 fas fa-caret-down"></i>
           </a>
-          <div class="collapse" id="menu1" data-parent="#sidebar">
-            <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">01-HTML-CSS-GIT</a>
-            <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">02-CSS-Bootstrap</a>
+          <div class="collapse ml-3" id="menu1" data-parent="#sidebar">
+            <a href="#" class="list-group-item" data-toggle="collapse" data-link="01.html" aria-expanded="false">01-HTML-CSS-GIT</a>
+            <a href="#" class="list-group-item" data-toggle="collapse" data-link="02.html" aria-expanded="false">02-CSS-Bootstrap</a>
             <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">03-Javascript</a>
             <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">04-JQuery</a>
             <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">05-Timers</a>
@@ -109,22 +65,7 @@
             <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">13-Express</a>
             <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">14-Handlebars</a>
             <a href="#" class="list-group-item" data-toggle="collapse" aria-expanded="false">15-Sequelize</a>
-            <!-- <div class="collapse" id="menu1sub2" data-parent="#menu1">
-              <a href="#" class="list-group-item" data-parent="#menu1sub1">Subitem 1 a</a>
-              <a href="#" class="list-group-item" data-parent="#menu1sub1">Subitem 2 b</a>
-              <a href="#menu1sub1sub1" class="list-group-item" data-toggle="collapse" aria-expanded="false">Subitem 3 c </a>
-              <div class="collapse" id="menu1sub1sub1">
-                <a href="#" class="list-group-item" data-parent="#menu1sub1sub1">Subitem 3 c.1</a>
-                <a href="#" class="list-group-item" data-parent="#menu1sub1sub1">Subitem 3 c.2</a>
-              </div>
-              <a href="#" class="list-group-item" data-parent="#menu1sub1">Subitem 4 d</a>
-              <a href="#menu1sub1sub2" class="list-group-item" data-toggle="collapse" aria-expanded="false">Subitem 5 e </a>
-              <div class="collapse" id="menu1sub1sub2">
-                <a href="#" class="list-group-item" data-parent="#menu1sub1sub2">Subitem 5 e.1</a>
-                <a href="#" class="list-group-item" data-parent="#menu1sub1sub2">Subitem 5 e.2</a>
-              </div>
-            </div>
-            <a href="#" class="list-group-item">Subitem 3</a> -->
+
           </div>
           <a href="#menu2" class="list-group-item d-inline-block collapsed" data-toggle="collapse" aria-expanded="false">
               <i class="fas fa-sticky-note"></i>
@@ -164,9 +105,19 @@
         </div>
       </div>
 
+    <div class="row">
+      <div class="col-md-4 p-0">
+        <a href="#" data-target="#sidebar" data-toggle="collapse">
+          <i class="m-2 fas fa-bars"></i>
+        </a>
+      </div>
+
+      <div class="content-body">
+
+      </div>
       <!-- sidebar toggle button ========================== -->
       <!-- <main class="col-md-10 float-left col px-5 pl-md-2 pt-2 main"> -->
-      <div class="w-100">
+      <!-- <div class="w-100">
 
         <div class="row">
           <div class="col-md-4 pl-3">
@@ -241,30 +192,7 @@
           </div>
 
         </div>
-      </div>
-
-
-      <!-- <div class="page-header">
-          <h2>Bootstrap 4 Sidebar Menu</h2>
-        </div>
-        <p class="lead">A responsive, multi-level vertical accordion.</p>
-        <hr>
-        <div class="row">
-          <div class="col-lg-6">
-            <button role="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo2" aria-expanded="true">
-              vertical collapsible
-            </button>
-            <div id="demo2" class="height collapse show" aria-expanded="true">
-              <div>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
-                  Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
-                  Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
-      <!-- </main> -->
+      </div> -->
     </div>
   </div>
 
@@ -272,7 +200,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <script src="./assets/javascript/app.js"></script>
+  <script src="./assets/js/bootcamp.js"></script>
 
 </body>
 
