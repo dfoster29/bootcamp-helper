@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootcamp Helper</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+
+
+  <nav id="top-nav" class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">
+      <h1>Bootcamp Helper</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://bootcampspot-v2.com/" target="_blank">BootcampSpot</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Podcasts
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="https://open.spotify.com/show/4kYCRYJ3yK5DQbP5tbfZby?si=0MdbRCujS4CY_CnxwR1a1A" target="_blank">Syntax</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Social
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a class="dropdown-item" href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a class="dropdown-item" href="https://www.instagram.com" target="_blank">Instagram</a>
+          </div>
+        </li>
+      </ul> -->
+      <form class="ml-auto form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="username" placeholder="username" aria-label="username">
+        <input class="form-control mr-sm-2" type="password" placeholder="password" aria-label="password">
+        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Login</button>
+      </form>
+    </div>
+  </nav>
+
+
+
+  <div class="container-fluid">
+    <div class="row d-flex d-md-block flex-nowrap wrapper">
+      <div class="col-md-2 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
+        <div class="list-group border-0 card text-center text-md-left">
+
+          <a href="https://bootcampspot-v2.com/login" class="list-group-item d-inline-block collapsed" target="_blank">
+            <span class="d-none d-md-inline">Bootcamp Spot</span>
+          </a>
+
+          <a href="#menu1" class="list-group-item d-inline-block collapsed" data-toggle="collapse" aria-expanded="false">
+            <span class="d-none d-md-inline">Videos</span>
+            <i class="ml-2 fas fa-caret-down"></i>
+          </a>
+          <div class="collapse" id="menu1" data-parent="#sidebar">
+            <a href="#menu1sub1" class="list-group-item" data-toggle="collapse" aria-expanded="false">01-HTML-CSS-GIT</a>
+            <a href="#menu1sub2" class="list-group-item" data-toggle="collapse" aria-expanded="false">02-CSS-Bootstrap</a>
+            <a href="#menu1sub3" class="list-group-item" data-toggle="collapse" aria-expanded="false">03-Javascript</a>
+            <a href="#menu1sub4" class="list-group-item" data-toggle="collapse" aria-expanded="false">04-JQuery</a>
+            <a href="#menu1sub5" class="list-group-item" data-toggle="collapse" aria-expanded="false">05-Timers</a>
+            <a href="#menu1sub6" class="list-group-item" data-toggle="collapse" aria-expanded="false">06-Ajax</a>
+            <a href="#menu1sub7" class="list-group-item" data-toggle="collapse" aria-expanded="false">07-Firebase</a>
+            <a href="#menu1sub8" class="list-group-item" data-toggle="collapse" aria-expanded="false">10-NodeJS</a>
+            <a href="#menu1sub9" class="list-group-item" data-toggle="collapse" aria-expanded="false">01-HTML-CSS-GIT</a>
+            <a href="#menu1sub10" class="list-group-item" data-toggle="collapse" aria-expanded="false">02-CSS-Bootstrap</a>
+            <div class="collapse" id="menu1sub2" data-parent="#menu1">
+              <a href="#" class="list-group-item" data-parent="#menu1sub1">Subitem 1 a</a>
+              <a href="#" class="list-group-item" data-parent="#menu1sub1">Subitem 2 b</a>
+              <a href="#menu1sub1sub1" class="list-group-item" data-toggle="collapse" aria-expanded="false">Subitem 3 c </a>
+              <div class="collapse" id="menu1sub1sub1">
+                <a href="#" class="list-group-item" data-parent="#menu1sub1sub1">Subitem 3 c.1</a>
+                <a href="#" class="list-group-item" data-parent="#menu1sub1sub1">Subitem 3 c.2</a>
+              </div>
+              <a href="#" class="list-group-item" data-parent="#menu1sub1">Subitem 4 d</a>
+              <a href="#menu1sub1sub2" class="list-group-item" data-toggle="collapse" aria-expanded="false">Subitem 5 e </a>
+              <div class="collapse" id="menu1sub1sub2">
+                <a href="#" class="list-group-item" data-parent="#menu1sub1sub2">Subitem 5 e.1</a>
+                <a href="#" class="list-group-item" data-parent="#menu1sub1sub2">Subitem 5 e.2</a>
+              </div>
+            </div>
+            <a href="#" class="list-group-item">Subitem 3</a>
+          </div>
+          <a href="#" class="list-group-item d-inline-block collapsed">
+            <i class="fa fa-film"></i>
+            <span class="d-none d-md-inline">Item 2</span>
+          </a>
+
+          <!-- social menu section ============================= -->
+          <a href="#menu3" class="list-group-item d-inline-block collapsed" data-toggle="collapse" aria-expanded="false">
+            <i class="fas fa-users"></i>
+            <span class="d-none d-md-inline">Social</span>
+            <i class="ml-2 fas fa-caret-down"></i>
+          </a>
+
+          <div class="collapse" id="menu3" data-parent="#sidebar">
+            <a href="https://www.facebook.com" class="list-group-item" target="_blank">
+              <span>
+                <i class="fab fa-facebook-square ml-3"></i>
+              </span>facebook</a>
+            <a href="https://www.instagram.com" class="list-group-item" target="_blank">
+              <span>
+                <i class="fab fa-instagram ml-3"></i>
+              </span>instagram</a>
+            <a href="https://www.twitter.com" class="list-group-item" target="_blank">
+              <span>
+                <i class="fab fa-twitter-square ml-3"></i>
+              </span>twitter</a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- sidebar toggle button ========================== -->
+      <!-- <main class="col-md-10 float-left col px-5 pl-md-2 pt-2 main"> -->
+      <div class="w-100">
+        <a href="#" data-target="#sidebar" data-toggle="collapse">
+          <i class="m-2 fas fa-bars"></i>
+        </a>
+
+        <div class="row p-2 justify-content-center">
+          <div class="col-md-4">
+            <div class="card w-100 mb-4">
+              <img class="card-img-top" src="./assets/img/01-1.png" alt="Card image cap">
+              <div class="card-body text-center">
+                <a href="https://www.youtube.com/watch?v=ieb6Svbc10E" target="_blank"><h3>HTML Layout</h3></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card w-100 mb-4">
+              <img class="card-img-top" src="./assets/img/01-2.png" alt="Card image cap">
+              <div class="card-body text-center">
+                <a href="https://www.youtube.com/watch?v=kMBinXTCrXI" target="_blank"><h3>Basic CSS Layout</h3></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card w-100 mb-4">
+              <img class="card-img-top" src="./assets/img/01-3.png" alt="Card image cap">
+              <div class="card-body text-center">
+                <a href="https://www.youtube.com/watch?v=0lpxKw6E90Y" target="_blank"><h3>CSS Floats</h3></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="card w-100">
+                <img class="card-img-top" src="./assets/img/01-4.png" alt="Card image cap">
+                <div class="card-body text-center">
+                  <a href="https://www.youtube.com/watch?v=sHfJn0jqBro" target="_blank"><h3>CSS Positioning Property</h3></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card w-100">
+                  <img class="card-img-top" src="./assets/img/01-5.png" alt="Card image cap">
+                  <div class="card-body text-center">
+                    <a href="https://www.youtube.com/watch?v=yWXgnQaWSW0" target="_blank"><h3>CSS Positioning Layouts</h3></a>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+      </div>
+
+
+      <!-- <div class="page-header">
+          <h2>Bootstrap 4 Sidebar Menu</h2>
+        </div>
+        <p class="lead">A responsive, multi-level vertical accordion.</p>
+        <hr>
+        <div class="row">
+          <div class="col-lg-6">
+            <button role="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo2" aria-expanded="true">
+              vertical collapsible
+            </button>
+            <div id="demo2" class="height collapse show" aria-expanded="true">
+              <div>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+                  Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+                  Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      <!-- </main> -->
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="./assets/javascript/app.js"></script>
+
+</body>
+
+</html>
