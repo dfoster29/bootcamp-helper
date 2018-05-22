@@ -160,3 +160,21 @@ a:hover {
   color: #F6F7EB;
   border-radius: 5px;
 }
+
+.social-img {
+  width: 50%;
+  height: auto;
+}
+
+.social-img:hover {
+  opacity: .8;
+}
+
+.podcast-img {
+  width: 75%;
+  height: auto;
+}
+
+.podcast-img:hover {
+  opacity: .8;
+}
