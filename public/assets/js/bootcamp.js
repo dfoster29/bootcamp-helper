@@ -4,10 +4,18 @@ $(".list-group-item").on('click', function () {
   // templatePath = "01.html";
   var pageTitle = $(this).text();
   $("#page-name").text(pageTitle);
-
-  $.get("./assets/templates/" + templatePath, function(pageHTML) {
-    console.log(pageHTML);
-    $(".content-body").html(pageHTML);
-  })
+  $.ajax({
+    url: "/api/loginCheck",
+    method: "GET"
+  }).then(function(isLoggedIn) {
+    if (!isLoggedIn) {
+      window.location.href= "/";
+    } else {
+      $.get("./assets/templates/" + templatePath, function(pageHTML) {
+        console.log(pageHTML);
+        $(".content-body").html(pageHTML);
+      })
+    }
+  });
+  
 });
-

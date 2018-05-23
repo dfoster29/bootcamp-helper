@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootcamp Helper</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+
+
+  <nav id="top-nav" class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">
+      <h1>Bootcamp Helper</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="ml-auto">
+      <span>Welcome, </span><span id="username-display">(user's name here)</span>
+      <a class="btn btn-outline-dark my-2 my-sm-0 ml-3" href="/" role="button">Logout</a>
+    </div>
+  </nav>
+
+
+
+  <div class="container-fluid">
+    <div class="row d-flex d-md-block flex-nowrap wrapper">
+      <div class="col-md-2 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
+        <div class="list-group border-0 card text-center text-md-left">
+
+          <!-- favorite section ============================= -->
+          <a href="./favorites.html" class="list-group-item d-inline-block collapsed">
+            <i class="fas fa-heart"></i>
+            <span class="d-none d-md-inline">Favorites</span>
+          </a>
+
+          <!-- bootcamp spot section ============================= -->
+          <a href="https://bootcampspot-v2.com/login" class="list-group-item d-inline-block collapsed" target="_blank">
+            <span class="d-none d-md-inline">Bootcamp Spot</span>
+          </a>
+
+          <!-- video section ============================= -->
+          <a href="#menu1" class="list-group-item d-inline-block collapsed" data-toggle="collapse" aria-expanded="false">
+            <i class="fas fa-video"></i>
+            <span class="d-none d-md-inline">Videos</span>
+            <i class="ml-2 fas fa-caret-down"></i>
+          </a>
+          <div class="collapse" id="menu1" data-parent="#sidebar">
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="vid-01.html" aria-expanded="false">01-HTML-CSS-GIT</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="vid-02.html" aria-expanded="false">02-CSS-Bootstrap</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="vid-03.html" aria-expanded="false">03-Javascript</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="vid-04.html" aria-expanded="false">04-JQuery</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="vid-05.html" aria-expanded="false">05-Timers</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="vid-06.html" aria-expanded="false">06-Ajax</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="vid-07.html" aria-expanded="false">07-Firebase</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="vid-10.html" aria-expanded="false">10-NodeJS</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="vid-11.html" aria-expanded="false">11-JS-Constructors</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="vid-12.html" aria-expanded="false">12-MYSQL</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="vid-13.html" aria-expanded="false">13-Express</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="vid-14.html" aria-expanded="false">14-Handlebars</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="vid-15.html" aria-expanded="false">15-Sequelize</a>
+          </div>
+
+          <!-- cheatsheet section ============================= -->
+          <a href="#menu2" class="list-group-item d-inline-block collapsed" data-toggle="collapse" aria-expanded="false">
+            <i class="fas fa-sticky-note"></i>
+            <span class="d-none d-md-inline">Cheatsheets</span>
+            <i class="ml-2 fas fa-caret-down"></i>
+          </a>
+          <div class="collapse" id="menu2" data-parent="#sidebar">
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="cs-01.html" aria-expanded="false">01-HTML-CSS-GIT</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="cs-02.html" aria-expanded="false">02-CSS-Bootstrap</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="cs-03.html" aria-expanded="false">03-Javascript</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="cs-04.html" aria-expanded="false">04-JQuery</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="cs-05.html" aria-expanded="false">05-Timers</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="cs-06.html" aria-expanded="false">06-Ajax</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="cs-07.html" aria-expanded="false">07-Firebase</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="cs-10.html" aria-expanded="false">10-NodeJS</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="cs-11.html" aria-expanded="false">11-JS-Constructors</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="cs-12.html" aria-expanded="false">12-MYSQL</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="cs-13.html" aria-expanded="false">13-Express</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="cs-14.html" aria-expanded="false">14-Handlebars</a>
+            <a href="#" class="list-group-item pl-5" data-toggle="collapse" data-link="cs-15.html" aria-expanded="false">15-Sequelize</a>
+          </div>
+
+          <!-- podcast section ============================= -->
+          <a href="#menu4" class="list-group-item d-inline-block collapsed" data-toggle="collapse" data-link="podcasts.html" aria-expanded="false">
+            <i class="fas fa-podcast"></i>
+            <span class="d-none d-md-inline">Podcasts</span>
+          </a>
+
+          <!-- local event section ============================= -->
+          <a href="#menu3" class="list-group-item d-inline-block collapsed" data-toggle="collapse" data-link="events.html" aria-expanded="false">
+            <i class="fas fa-calendar"></i>
+            <span class="d-none d-md-inline">Local Events</span>
+          </a>
+
+          <!-- social section ============================= -->
+          <a href="#menu3" class="list-group-item d-inline-block collapsed" data-toggle="collapse" data-link="social.html" aria-expanded="false">
+            <i class="fas fa-users"></i>
+            <span class="d-none d-md-inline">Social</span>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 p-3">
+          <div class="text-center p-2" id="section-title">
+            <h1 id="page-name">Home</h1>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="content-body">
+
+    </div>
+
+
+  </div>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="./assets/js/bootcamp.js"></script>
+
+</body>
+
+</html>

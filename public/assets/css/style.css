@@ -178,3 +178,26 @@ a:hover {
 .podcast-img:hover {
   opacity: .8;
 }
+
+#login-header {
+  background-color: #E94F37;
+  color: #F6F7EB;
+}
+
+#login-body {
+  background-color: white;
+  color: #393E41;
+}
+
+#login-footer {
+  background-color: white;
+  color: #393E41;
+}
+
+#sign-up-link {
+  color: #393E41;
+}
+
+#login-card {
+  margin-top: 125px;
+}

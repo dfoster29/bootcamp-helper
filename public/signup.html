@@ -28,29 +28,32 @@
       <div class="col-md-4">
         <div class="card" id="login-card">
           <div class="card-header text-center" id="login-header">
-            <h2>Log In</h2>
+            <h2>Sign Up</h2>
           </div>
           <div class="card-body" id="login-body">
-            <form class="login">
+            <form class="signup">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input type="username" class="form-control" id="first-name" placeholder="first name...">
+              </div>
+              <div class="form-group">
+                <input type="username" class="form-control" id="last-name" placeholder="last name...">
+              </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Username</label>
-                <input type="username" class="form-control" id="email-input" placeholder="username...">
+                <input type="username" class="form-control" id="username-input" placeholder="username...">
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="password-input" placeholder="password...">
               </div>
-              <a role="button" class="btn btn-dark btn-block" href="/home">Log in</a>
+              <a role="button" class="btn btn-dark btn-block" href="/home">Sign up</a>
             </form>
-          </div>
-          <div class="card-footer" id="login-footer">
-            <p>Or sign up
-              <a href="/signup" id="sign-up-link">here</a>
-            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
