@@ -4,26 +4,21 @@ $(".list-group-item").on('click', function () {
   // templatePath = "01.html";
   var pageTitle = $(this).text();
   $("#page-name").text(pageTitle);
-  $.ajax({
-    url: "/api/loginCheck",
-    method: "GET"
-  }).then(function(isLoggedIn) {
-    if (!isLoggedIn) {
-      window.location.href= "/";
-    } else {
-      $.get("./assets/templates/" + templatePath, function(pageHTML) {
-        console.log(pageHTML);
-        $(".content-body").html(pageHTML);
-      })
-    }
-  });
-  
+
+
+  $.get("./assets/templates/" + templatePath, function (pageHTML) {
+    console.log(pageHTML);
+    $(".content-body").html(pageHTML);
+  })
+
 });
 
-$(document).ready(function() {
+
+
+$(document).ready(function () {
   // This file just does a GET request to figure out which user is logged in
   // and updates the HTML on the page
-  $.get("/api/user_data").then(function(data) {
+  $.get("/api/user_data").then(function (data) {
     console.log(data);
     $("#username-display").text("Welcome, " + data.first_name + " " + data.last_name);
 

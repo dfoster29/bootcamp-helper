@@ -31,7 +31,7 @@ module.exports = function (app) {
     // So we're sending the user back the route to the members page because the redirect will happen on the front end
     // They won't get this or even be able to access this page if they aren't authed
     console.log(req.user);
-    res.json("/members");
+    res.json("/home");
   });
 
 
@@ -51,15 +51,15 @@ module.exports = function (app) {
     var form = new formidable.IncomingForm();
 
     // parse information for form fields and incoming files
-    form.parse(req, function (err, fields, files) {
-      console.log(fields);
+    // form.parse(req, function (err, fields, files) {
+    //   console.log(fields);
 
         db.User.create({
           first_name: fields.first_name,
           last_name: fields.last_name,
           email: fields.email,
           password: fields.password,
-        }).then(function () {
+        }).then(function (userInfo) {
          // Upon successful signup, log user in
          req.login(userInfo, function (err) {
            if (err) {
@@ -67,14 +67,14 @@ module.exports = function (app) {
              return res.status(422).json(err);
            }
            console.log(req.user);
-           return res.json("/members");
+           return res.json("/home");
          });
         }).catch(function (err) {
           console.log(err);
           res.status(422).json(err);
         });
       
-    });
+    // });
 
   });
 
