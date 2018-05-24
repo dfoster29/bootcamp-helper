@@ -221,6 +221,16 @@ iframe {
 
 .nav-tabs .nav-link.active {
   color: #F6F7EB;
-  background-color: red;
+  background-color: #E94F37;
   border-color: #393E41;
+}
+
+.help-link-button {
+  color: #F6F7EB;
+  background-color: #E94F37;
+}
+
+.help-link-button:hover {
+  color: #E6E8E6;
+  background-color: #E94F37;
 }
