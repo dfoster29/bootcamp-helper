@@ -51,8 +51,8 @@ module.exports = function (app) {
     var form = new formidable.IncomingForm();
 
     // parse information for form fields and incoming files
-    // form.parse(req, function (err, fields, files) {
-    //   console.log(fields);
+    form.parse(req, function (err, fields, files) {
+      console.log(fields);
 
         db.User.create({
           first_name: fields.first_name,
@@ -74,7 +74,7 @@ module.exports = function (app) {
           res.status(422).json(err);
         });
       
-    // });
+    });
 
   });
 

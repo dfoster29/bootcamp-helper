@@ -201,3 +201,15 @@ a:hover {
 #login-card {
   margin-top: 125px;
 }
+
+.pdfobject-container {
+   height: 500px;
+  }
+
+.pdfobject { 
+  border: 1px solid #666; 
+}
+
+iframe {
+  height: 500px;
+}
