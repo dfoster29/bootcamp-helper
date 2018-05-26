@@ -5,11 +5,13 @@ $(document).ready(function () {
   var passwordInput = $("input#password-input");
   var firstNameInput = $("input#first-name");
   var lastNameInput = $("input#last-name");
+  var accessTokenInput = $("input#access-token-input");
+  // var accessToken = "76E78CC63BA7B4E6";
 
   // When the signup button is clicked, we validate the email and password are not blank
   signUpForm.on("submit", function (event) {
     event.preventDefault();
-
+    console.log(accessTokenInput);
     // Use FormData constructor to build a new multipart form (for handling images)
     var formData = new FormData();
     // append first name
@@ -21,16 +23,21 @@ $(document).ready(function () {
     // append password to form (password: '12345')
     formData.append("password", passwordInput.val().trim());
 
-
     // if (!userData.email || !userData.password) {
     //   return;
     // }
-    // If we have an email and password, run the signUpUser function
-    signUpUser(formData);
-    emailInput.val("");
-    passwordInput.val("");
-    firstNameInput.val("");
-    lastNameInput.val("");
+    // If we have an email and password, and the correct access token, run the signUpUser function
+    if (accessTokenInput.val().trim() !== "76E78CC63BA7B4E6") {
+      alert("invalid access token");
+      return;
+    } else {
+      signUpUser(formData);
+      emailInput.val("");
+      passwordInput.val("");
+      firstNameInput.val("");
+      lastNameInput.val("");
+      accessTokenInput.val("");
+    }
   });
 
   // Does a post to the signup route. If successful, we are redirected to the members page
